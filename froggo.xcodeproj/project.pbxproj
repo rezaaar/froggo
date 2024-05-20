@@ -1,0 +1,504 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B145FBF52BF768D10012D7F9 /* frogsfx.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B145FBF42BF768D10012D7F9 /* frogsfx.mp3 */; };
+		B145FBF82BF7691C0012D7F9 /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B145FBF72BF7691C0012D7F9 /* AudioPlayer.swift */; };
+		B145FBFB2BF76B620012D7F9 /* ChoosingModeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B145FBFA2BF76B620012D7F9 /* ChoosingModeView.swift */; };
+		B145FBFD2BF771140012D7F9 /* ClassicDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B145FBFC2BF771140012D7F9 /* ClassicDetailView.swift */; };
+		B1937B892BF6428A0070482F /* froggo Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = B1937B882BF6428A0070482F /* froggo Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B1937B8E2BF6428A0070482F /* froggoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1937B8D2BF6428A0070482F /* froggoApp.swift */; };
+		B1937B902BF6428A0070482F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1937B8F2BF6428A0070482F /* ContentView.swift */; };
+		B1937B922BF6428B0070482F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1937B912BF6428B0070482F /* Assets.xcassets */; };
+		B1937B952BF6428B0070482F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1937B942BF6428B0070482F /* Preview Assets.xcassets */; };
+		B1ECA7352BFB380D00262A05 /* Frog.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1ECA7342BFB380D00262A05 /* Frog.swift */; };
+		B1ECA7372BFB3E3C00262A05 /* Metronome.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1ECA7362BFB3E3C00262A05 /* Metronome.swift */; };
+		B1ECA7392BFB5A2A00262A05 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1ECA7382BFB5A2A00262A05 /* GameView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B1937B8A2BF6428A0070482F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B1937B7C2BF6428A0070482F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B1937B872BF6428A0070482F;
+			remoteInfo = "froggo Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B1937B9B2BF6428B0070482F /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				B1937B892BF6428A0070482F /* froggo Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B145FBF42BF768D10012D7F9 /* frogsfx.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = frogsfx.mp3; sourceTree = "<group>"; };
+		B145FBF72BF7691C0012D7F9 /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
+		B145FBFA2BF76B620012D7F9 /* ChoosingModeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoosingModeView.swift; sourceTree = "<group>"; };
+		B145FBFC2BF771140012D7F9 /* ClassicDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassicDetailView.swift; sourceTree = "<group>"; };
+		B1937B822BF6428A0070482F /* froggo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = froggo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1937B882BF6428A0070482F /* froggo Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "froggo Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1937B8D2BF6428A0070482F /* froggoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = froggoApp.swift; sourceTree = "<group>"; };
+		B1937B8F2BF6428A0070482F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B1937B912BF6428B0070482F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B1937B942BF6428B0070482F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B1ECA7342BFB380D00262A05 /* Frog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Frog.swift; sourceTree = "<group>"; };
+		B1ECA7362BFB3E3C00262A05 /* Metronome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Metronome.swift; sourceTree = "<group>"; };
+		B1ECA7382BFB5A2A00262A05 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B1937B852BF6428A0070482F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B145FBF62BF7690A0012D7F9 /* Engine */ = {
+			isa = PBXGroup;
+			children = (
+				B145FBF72BF7691C0012D7F9 /* AudioPlayer.swift */,
+				B1ECA7362BFB3E3C00262A05 /* Metronome.swift */,
+			);
+			path = Engine;
+			sourceTree = "<group>";
+		};
+		B145FBF92BF76B2E0012D7F9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B145FBFA2BF76B620012D7F9 /* ChoosingModeView.swift */,
+				B145FBFC2BF771140012D7F9 /* ClassicDetailView.swift */,
+				B1ECA7382BFB5A2A00262A05 /* GameView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B1937B7B2BF6428A0070482F = {
+			isa = PBXGroup;
+			children = (
+				B1937B8C2BF6428A0070482F /* froggo Watch App */,
+				B1937B832BF6428A0070482F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B1937B832BF6428A0070482F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B1937B822BF6428A0070482F /* froggo.app */,
+				B1937B882BF6428A0070482F /* froggo Watch App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B1937B8C2BF6428A0070482F /* froggo Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				B1ECA7332BFB380200262A05 /* Component */,
+				B145FBF92BF76B2E0012D7F9 /* View */,
+				B145FBF62BF7690A0012D7F9 /* Engine */,
+				B1937B8D2BF6428A0070482F /* froggoApp.swift */,
+				B1937B8F2BF6428A0070482F /* ContentView.swift */,
+				B1937B912BF6428B0070482F /* Assets.xcassets */,
+				B145FBF42BF768D10012D7F9 /* frogsfx.mp3 */,
+				B1937B932BF6428B0070482F /* Preview Content */,
+			);
+			path = "froggo Watch App";
+			sourceTree = "<group>";
+		};
+		B1937B932BF6428B0070482F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B1937B942BF6428B0070482F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B1ECA7332BFB380200262A05 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				B1ECA7342BFB380D00262A05 /* Frog.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B1937B812BF6428A0070482F /* froggo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1937B9C2BF6428B0070482F /* Build configuration list for PBXNativeTarget "froggo" */;
+			buildPhases = (
+				B1937B802BF6428A0070482F /* Resources */,
+				B1937B9B2BF6428B0070482F /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B1937B8B2BF6428A0070482F /* PBXTargetDependency */,
+			);
+			name = froggo;
+			productName = froggo;
+			productReference = B1937B822BF6428A0070482F /* froggo.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		B1937B872BF6428A0070482F /* froggo Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1937B982BF6428B0070482F /* Build configuration list for PBXNativeTarget "froggo Watch App" */;
+			buildPhases = (
+				B1937B842BF6428A0070482F /* Sources */,
+				B1937B852BF6428A0070482F /* Frameworks */,
+				B1937B862BF6428A0070482F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "froggo Watch App";
+			productName = "froggo Watch App";
+			productReference = B1937B882BF6428A0070482F /* froggo Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B1937B7C2BF6428A0070482F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					B1937B812BF6428A0070482F = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					B1937B872BF6428A0070482F = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = B1937B7F2BF6428A0070482F /* Build configuration list for PBXProject "froggo" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B1937B7B2BF6428A0070482F;
+			productRefGroup = B1937B832BF6428A0070482F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B1937B812BF6428A0070482F /* froggo */,
+				B1937B872BF6428A0070482F /* froggo Watch App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B1937B802BF6428A0070482F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1937B862BF6428A0070482F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1937B952BF6428B0070482F /* Preview Assets.xcassets in Resources */,
+				B1937B922BF6428B0070482F /* Assets.xcassets in Resources */,
+				B145FBF52BF768D10012D7F9 /* frogsfx.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B1937B842BF6428A0070482F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B145FBF82BF7691C0012D7F9 /* AudioPlayer.swift in Sources */,
+				B1ECA7352BFB380D00262A05 /* Frog.swift in Sources */,
+				B1937B902BF6428A0070482F /* ContentView.swift in Sources */,
+				B1ECA7372BFB3E3C00262A05 /* Metronome.swift in Sources */,
+				B1937B8E2BF6428A0070482F /* froggoApp.swift in Sources */,
+				B145FBFD2BF771140012D7F9 /* ClassicDetailView.swift in Sources */,
+				B1ECA7392BFB5A2A00262A05 /* GameView.swift in Sources */,
+				B145FBFB2BF76B620012D7F9 /* ChoosingModeView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B1937B8B2BF6428A0070482F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B1937B872BF6428A0070482F /* froggo Watch App */;
+			targetProxy = B1937B8A2BF6428A0070482F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B1937B962BF6428B0070482F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B1937B972BF6428B0070482F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		B1937B992BF6428B0070482F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"froggo Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = H389J7W85Q;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = froggo;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "reza-apple-dev.froggo.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.5;
+			};
+			name = Debug;
+		};
+		B1937B9A2BF6428B0070482F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"froggo Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = H389J7W85Q;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = froggo;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "reza-apple-dev.froggo.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 10.5;
+			};
+			name = Release;
+		};
+		B1937B9D2BF6428B0070482F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H389J7W85Q;
+				INFOPLIST_KEY_CFBundleDisplayName = froggo;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "reza-apple-dev.froggo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		B1937B9E2BF6428B0070482F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H389J7W85Q;
+				INFOPLIST_KEY_CFBundleDisplayName = froggo;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "reza-apple-dev.froggo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B1937B7F2BF6428A0070482F /* Build configuration list for PBXProject "froggo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1937B962BF6428B0070482F /* Debug */,
+				B1937B972BF6428B0070482F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1937B982BF6428B0070482F /* Build configuration list for PBXNativeTarget "froggo Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1937B992BF6428B0070482F /* Debug */,
+				B1937B9A2BF6428B0070482F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1937B9C2BF6428B0070482F /* Build configuration list for PBXNativeTarget "froggo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1937B9D2BF6428B0070482F /* Debug */,
+				B1937B9E2BF6428B0070482F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B1937B7C2BF6428A0070482F /* Project object */;
+}
